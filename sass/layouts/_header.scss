@@ -1,12 +1,11 @@
 .header-page {
   background-color: var(--prime-bgc);
-  position: relative;
-  z-index: 1;
 
   border-bottom: 1px solid var(--line-header);
 
   &__wraper {
     display: flex;
+
 
     @media screen and (max-width: 767px) {
       align-items: center;
@@ -20,6 +19,7 @@
     position: absolute;
     top: 0px;
     left: 0;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -30,14 +30,14 @@
 
     height: 100vh;
 
-    transform: translateY(-101%);
+    transform: translatex(-101%);
     width: 100%;
     background-color: var(--prime-bgc);
 
     transition: transform 250ms var(--cubic-bezer);
 
     &.is-open {
-      transform: translateY(0);
+      transform: translatex(0);
     }
 
     &-icon {

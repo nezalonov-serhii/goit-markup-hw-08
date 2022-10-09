@@ -15,4 +15,8 @@
 
 .hero-section__btn {
     padding: 10px 24px;
+
+    @media screen and (min-width:1200px) {
+      padding: 10px 32px;
+    }
 }
