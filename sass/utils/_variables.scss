@@ -1,0 +1,36 @@
+:root {
+  --prime-bgc: #ffffff;
+  --first-bgc: #2f303a;
+  --second-bgc: #f5f4fa;
+
+  --acent-color: #2196f3;
+  --prime-color: #212121;
+  --second-color: #757575;
+
+  --line-header: #ececec;
+
+  --btn-bgc: #2196f3;
+  --btn-color: #ffffff;
+  --btn-active: #188ce8;
+
+  --overlay-hero: rgba(47, 48, 58, 0.4);
+  --modall-hero: rgba(0, 0, 0, 0.2);
+  --overlay-project: rgba(33, 150, 243, 0.9);
+
+  --social-color: #afb1b8;
+
+  --hero-color: #ffffff;
+  --logo-header-color: #000000;
+  --footer-color: #ffffff;
+  --bgc-work-desc: rgba(47, 48, 58, 0.8);
+  --address-footer-contact: rgba(255, 255, 255, 0.6);
+  --bgc-social-footer: rgba(255, 255, 255, 0.1);
+  --potfolio-project-border: #eeeeee;
+
+  //Fonts
+  --logo-font: 'Raleway', sans-serif;
+  --prime-font: 'Roboto', sans-serif;
+
+  //cubic-bezer
+  --cubic-bezer: cubic-bezier(0.4, 0, 0.2, 1);
+}
