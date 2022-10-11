@@ -31,6 +31,15 @@
     }
   }
 
+  &--footer {
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  }
+
   &__header {
     color: var(--logo-header-color);
   }

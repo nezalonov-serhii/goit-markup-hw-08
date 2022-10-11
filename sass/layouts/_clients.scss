@@ -1,0 +1,44 @@
+.clients {
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 480px) {
+      width: 210px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 170px;
+    }
+  }
+
+  &__link {
+    @include flex-center;
+
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+    color: var(--social-color);
+
+    transition: color 250ms var(--cubic-bezer);
+    &:hover,
+    &:focus {
+      color: var(--acent-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

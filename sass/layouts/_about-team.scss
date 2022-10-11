@@ -41,33 +41,12 @@
   }
 
   &__descr {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 
     color: var(--second-color);
-  }
-}
-
-.social {
-  @include flex-center;
-  gap: 10px;
-
-  &__link {
-    @include flex-center;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-
-    color: var(--social-color);
-
-    &:hover {
-      color: var(--hero-color);
-      background-color: var(--acent-color);
-    }
-  }
-
-  &__icon {
-    fill: currentColor;
   }
 }

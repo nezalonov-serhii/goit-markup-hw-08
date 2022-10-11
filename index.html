@@ -76,7 +76,7 @@
         <!-- hero -->
         <section class="hero-section">
             <h1 class="hero-section__title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-section__btn btn active-btn" data-modal-open>Замовити послугу</button>
+            <button type="button" class="btn btn--hero-section active-btn" data-modal-open>Замовити послугу</button>
         </section>
 
         <!-- advantage -->
@@ -370,69 +370,70 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="footer__wrap container">
-            <div class="address">
-                <a href="./index.html" lang="en" class="logo logo--footer link">Web<span
-                        class="logo__footer">Studio</span></a>
-
-                <address class="address__wrap">
-                    <ul class="lists">
-                        <li class="address__list">
-                            <a href="https://goo.gl/maps/ywGKh34JQWEBD4Sm8" class="address__link active link">м. Київ,
-                                пр-т Лесі Українки, 26</a>
+        <div class="footer__container container">
+            <div class="footer__wrap">
+                <div class="address">
+                    <a href="./index.html" lang="en" class="logo logo--footer link">Web<span class="logo__footer">Studio</span></a>
+                
+                    <address class="address__wrap">
+                        <ul class="lists">
+                            <li class="address__list">
+                                <a href="https://goo.gl/maps/ywGKh34JQWEBD4Sm8"
+                                    class="address__link address__link--color active link">м. Київ,
+                                    пр-т Лесі Українки, 26</a>
+                            </li>
+                            <li class="address__list">
+                                <a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer nofollow"
+                                    class="address__link active link">info@devstudio.com</a>
+                            </li>
+                            <li class="address__list">
+                                <a href="tel:+380961111111" class="address__link active link">+38 096
+                                    111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-footer">
+                    <strong class="social-footer__title">приєднуйтесь</strong>
+                    <ul class="social lists">
+                        <li class="social__item">
+                            <a href="./" class="social__link social__link--color">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__list">
-                            <a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer nofollow"
-                                class="address__link address__link--color active link">info@devstudio.com</a>
+                        <li class="social__item">
+                            <a href="./" class="social__link social__link--color">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="address__list">
-                            <a href="tel:+380961111111" class="address__link address__link--color active link">+38 096
-                                111 11 11</a>
+                        <li class="social__item">
+                            <a href="./" class="social__link social__link--color">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="./" class="social__link social__link--color">
+                                <svg class="social__icon" width="20" height="20">
+                                    <use href="./img/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="social-footer">
-                <strong class="social-footer__title">приєднуйтесь</strong>
-                <ul class="social lists">
-                    <li class="social__item">
-                        <a href="./" class="social__link social__link--color">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="./" class="social__link social__link--color">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="./" class="social__link social__link--color">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="./" class="social__link social__link--color">
-                            <svg class="social__icon" width="20" height="20">
-                                <use href="./img/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <div>
                 <strong class="social-footer__title">Підпишіться на розсилку</strong>
                 <form class="footer-form">
                     <input type="email" name="maill" class="footer-form__input" placeholder="E-mail" required>
                     <button type="submit" class="btn btn--footer-form active-btn">
                         Підписатися
-                        <svg width="24" height="24" class="footer-form__icon-send">
+                        <svg width="24" height="24" class="btn__icon-send">
                             <use href="./img/icons.svg#icon-send"></use>
                         </svg>
                     </button>
@@ -487,7 +488,8 @@
                 <label for="check" class="modall__checkbox-label">
                     <input type="checkbox" name="agree" id="check" class="modall__ckeckbox visually-hidden" required>
                     <svg width="16" height="15" class="modall__agree">
-                        <use href="./img/icons.svg#icon-check"></use>
+                        <use href="./img/icons.svg#icon-unchecked" class="modall__unchecked"></use>
+                        <use href="./img/icons.svg#icon-checked" class="modall__checked"></use>
                     </svg>
                     <p class="modall__license">
                         Погоджуюся з розсилкою та приймаю
