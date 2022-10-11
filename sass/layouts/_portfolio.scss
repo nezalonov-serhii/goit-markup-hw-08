@@ -40,6 +40,12 @@
   &__link {
     display: block;
     color: currentColor;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    transition: box-shadow 250ms var(--cubic-bezer);
   }
 
   &__overlay-wrap {
@@ -70,6 +76,9 @@
 
   &__wrap {
     padding: 20px 24px;
+    border-left: 1px solid var(--potfolio-project-border);
+    border-right: 1px solid var(--potfolio-project-border);
+    border-bottom: 1px solid var(--potfolio-project-border);
     @media screen and (min-width: 480px) and (max-width: 767px) {
       width: 450px;
     }
