@@ -9,7 +9,7 @@
   letter-spacing: 0.03em;
   color: var(--acent-color);
 
-  @media screen and (min-width: 1170px) {
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -18,12 +18,12 @@
   &--header {
     padding: 16px 0;
 
-    @media screen and (min-width: 768px) and (max-width: 1169px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-right: 88px;
       padding: 26px 0;
     }
 
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 88px;
       padding-top: 24px;
       padding-bottom: 25px;

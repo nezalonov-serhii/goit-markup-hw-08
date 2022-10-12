@@ -22,19 +22,20 @@
         <div class="header-page__wraper container">
             <a href="./index.html" lang="en" class="logo logo--header link">Web<span
                     class="logo__header">Studio</span></a>
-            <button class="btn-menu js-open-menu">
+            <button class="btn-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
+                aria-label="open menu">
                 <svg width="40" height="40" class="menu-icon">
                     <use href="./img/icons.svg#icon-menu"></use>
                 </svg>
             </button>
-            <div class="menu js-menu-container">
-                <button class="btn-menu js-close-menu">
+            <div class="menu js-menu-container" id="mobile-menu">
+                <button class="btn-menu js-close-menu" aria-label="close menu">
                     <svg width="40" height="40" class="menu-icon">
                         <use href="./img/icons.svg#icon-close-menu"></use>
                     </svg>
                 </button>
                 <nav class="navigation">
-                    <a href="./index.html" class="navigation__link navigation__link--current active link">Студія</a>
+                    <a href="./index.html" class="navigation__link navigation__link--current  active link">Студія</a>
                     <a href="./portfolio.html" class="navigation__link active link">Портфоліо</a>
                     <a href="./" class="navigation__link active link">Контакти</a>
                 </nav>
@@ -138,19 +139,34 @@
                 <h2 class="title">Чим ми займаємося</h2>
                 <ul class="work__lists lists">
                     <li class="work__item">
-                        <img src="./img/themes-tel.jpg" alt="Вибирає тему на телефон" width="370">
+                        <picture>
+                            <source srcset="./img/work/mobile.webp 1x, ./img/work/mobile@2x.webp 2x" type="image/webp">
+                            <source srcset="./img/work/mobile.jpg 1x, ./img/work/mobile@2x.jpg 2x">
+
+                            <img src="./img/mobile.jpg" alt="Вибирає тему на телефон" width="370">
+                        </picture>
                         <div class="work__wrap">
                             <h3 class="work__title">Десктопні додатки</h3>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img src="./img/keyboard.jpg" alt="Друкуе на клавіатурі" width="370">
+                        <picture>
+                            <source srcset="./img/work/typing.webp 1x, ./img/work/typing@2x.webp 2x">
+                            <source srcset="./img/work/typing.jpg 1x, ./img/work/typing@2x.jpg 2x">
+
+                            <img src="./img/typing.jpg" alt="Друкуе на клавіатурі" width="370">
+                        </picture>
                         <div class="work__wrap">
                             <h3 class="work__title">Мобільні додатки</h3>
                         </div>
                     </li>
                     <li class="work__item">
-                        <img src="./img/rgb.jpg" alt="Підбирає палітру кольорів" width="370">
+                        <picture>
+                            <source srcset="./img/work/rgb.webp 1x, ./img/work/rgb@2x.webp 2x">
+                            <source srcset="./img/work/rgb.jpg 1x, ./img/work/rgb@2x.jpg 2x">
+
+                            <img src="./img/rgb.jpg" alt="Підбирає палітру кольорів" width="370">
+                        </picture>
                         <div class="work__wrap">
                             <h3 class="work__title">Дизайнерські рішення</h3>
                         </div>
@@ -165,7 +181,25 @@
                 <h2 class="title">Наша команда</h2>
                 <ul class="cards-lists lists">
                     <li class="card">
-                        <img src="./img/photo-1.jpg" alt="Фотокартка Ігор Дем'яненко" >
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/demyanenko-desktop.webp 1x, ./img/team/demyanenko-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/demyanenko-desktop.jpg 1x, ./img/team/demyanenko-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/demyanenko-tablet.webp 1x, ./img/team/demyanenko-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/demyanenko-tablet.jpg 1x, ./img/team/demyanenko-tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/demyanenko-mobile.webp 1x, ./img/team/demyanenko-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/demyanenko-mobile.jpg 1x, ./img/team/demyanenko-mobile@2x.jpg 2x">
+
+                            <img src="./img/photo-1.jpg" alt="Фотокартка Ігор Дем'яненко">
+                        </picture>
                         <div class="card__wrap">
                             <h3 class="card__title">Ігор Дем'яненко</h3>
                             <p class="card__descr" lang="en">Product Designer</p>
@@ -202,7 +236,25 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./img/photo-2.jpg" alt="Фотокартка Ольга Рєпіна">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/repina-desktop.webp 1x, ./img/team/repina-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/repina-desktop.jpg 1x, ./img/team/repina-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/repina-tablet.webp 1x, ./img/team/repina-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/repina-tablet.jpg 1x, ./img/team/repina-tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/repina-mobile.webp 1x, ./img/team/repina-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/repina-mobile.jpg 1x, ./img/team/repina-mobile@2x.jpg 2x">
+
+                            <img src="./img/repina.jpg" alt="Фотокартка Ольга Рєпіна">
+                        </picture>
                         <div class="card__wrap">
                             <h3 class="card__title">Ольга Рєпіна</h3>
                             <p class="card__descr" lang="en">Frontend Developer</p>
@@ -239,7 +291,25 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./img/photo-3.jpg" alt="Фотокартка Микола Тарасов">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/tarasov-desktop.webp 1x, ./img/team/tarasov-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/tarasov-desktop.jpg 1x, ./img/team/tarasov-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/tarasov-tablet.webp 1x, ./img/team/tarasov-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/tarasov-tablet.jpg 1x, ./img/team/tarasov-tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/tarasov-mobile.webp 1x, ./img/team/tarasov-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/tarasov-mobile.jpg 1x, ./img/team/tarasov-mobile@2x.jpg 2x">
+
+                            <img src="./img/tarasov.jpg" alt="Фотокартка Микола Тарасов">
+                        </picture>
                         <div class="card__wrap">
                             <h3 class="card__title">Микола Тарасов</h3>
                             <p class="card__descr" lang="en">Marketing</p>
@@ -276,7 +346,25 @@
                         </div>
                     </li>
                     <li class="card">
-                        <img src="./img/photo-4.jpg" alt="Фотокартка Михайло Єрмаков">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/ermakov-desktop.webp 1x, ./img/team/ermakov-desktop@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 1200px)"
+                                srcset="./img/team/ermakov-desktop.jpg 1x, ./img/team/ermakov-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/ermakov-tablet.webp 1x, ./img/team/ermakov-tablet@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(min-width: 768px)"
+                                srcset="./img/team/ermakov-tablet.jpg 1x, ./img/team/ermakov-tablet@2x.jpg 2x">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/ermakov-mobile.webp 1x, ./img/team/ermakov-mobile@2x.webp 2x"
+                                type="image/webp">
+                            <source media="(max-width: 767px)"
+                                srcset="./img/team/ermakov-mobile.jpg 1x, ./img/team/ermakov-mobile@2x.jpg 2x">
+
+                            <img src="./img/ermakov.jpg" alt="Фотокартка Михайло Єрмаков">
+                        </picture>
                         <div class="card__wrap">
                             <h3 class="card__title">Михайло Єрмаков</h3>
                             <p class="card__descr" lang="en">UI Designer</p>
@@ -373,8 +461,9 @@
         <div class="footer__container container">
             <div class="footer__wrap">
                 <div class="address">
-                    <a href="./index.html" lang="en" class="logo logo--footer link">Web<span class="logo__footer">Studio</span></a>
-                
+                    <a href="./index.html" lang="en" class="logo logo--footer link">Web<span
+                            class="logo__footer">Studio</span></a>
+
                     <address class="address__wrap">
                         <ul class="lists">
                             <li class="address__list">
@@ -455,30 +544,30 @@
             <form class="modall__form">
                 <label for="username" class="modall__field">
                     <span class="modall__label">Ім'я</span>
-                    <div class="modall__wrap-input">
+                    <span class="modall__wrap-input">
                         <input type="text" id="username" name="username" class="modall__input" required>
                         <svg width="18" height="18" class="modall__icon">
                             <use href="./img/icons.svg#icon-person"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label for="tell" class="modall__field">
                     <span class="modall__label">Телефон</span>
-                    <div class="modall__wrap-input">
+                    <span class="modall__wrap-input">
                         <input type="tel" id="tell" name="tell" class="modall__input" required>
                         <svg width="18" height="18" class="modall__icon">
                             <use href="./img/icons.svg#icon-phone"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label for="email" class="modall__field">
                     <span class="modall__label">Пошта</span>
-                    <div class="modall__wrap-input">
+                    <span class="modall__wrap-input">
                         <input type="email" id="email" name="email" class="modall__input" required>
                         <svg width="18" height="18" class="modall__icon">
                             <use href="./img/icons.svg#icon-email"></use>
                         </svg>
-                    </div>
+                    </span>
                 </label>
                 <label for="comment" class="modall__field-textarea">
                     <span class="modall__label">Коментар</span>
@@ -491,10 +580,10 @@
                         <use href="./img/icons.svg#icon-unchecked" class="modall__unchecked"></use>
                         <use href="./img/icons.svg#icon-checked" class="modall__checked"></use>
                     </svg>
-                    <p class="modall__license">
+                    <span class="modall__license">
                         Погоджуюся з розсилкою та приймаю
                         <a href="./" class="modall__license-link">Умови договору</a>
-                    </p>
+                    </span>
                 </label>
                 <button type="submit" class="btn btn--modall active-btn">Відправити</button>
             </form>

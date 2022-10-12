@@ -1,5 +1,6 @@
 .filter {
   display: flex;
+
   gap: 8px;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -19,11 +20,16 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     justify-content: center;
   }
 
   &__item {
+
+     @media screen and(max-width: 479px) {
+      width: 100%;
+      height: 100%;
+     }
     @media screen and (min-width: 480px) and (max-width: 767px) {
       max-width: 450px;
     }
@@ -58,8 +64,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     background-color: var(--overlay-project);
-    padding: 77px 24px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    
 
     font-size: 18px;
     line-height: 1.56;

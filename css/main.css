@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --prime-bgc: #ffffff;
   --first-bgc: #2f303a;
@@ -26,6 +27,20 @@
   --cubic-bezer: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.box {
+  width: 480px;
+  height: 320px;
+  background-image: url("photo.png");
+  background-size: 480px 320px;
+}
+
+/* Перевизначаємо шлях до 2x зображення,
+    якщо щільність екрану мінімум 2 */
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url("photo@2x.png");
+  }
+}
 h1,
 h2,
 h3,
@@ -100,7 +115,12 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -194,7 +214,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--acent-color);
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
@@ -204,13 +224,13 @@ body {
 .logo--header {
   padding: 16px 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1169px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo--header {
     margin-right: 88px;
     padding: 26px 0;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .logo--header {
     margin-right: 88px;
     padding-top: 24px;
@@ -639,8 +659,8 @@ body {
 
 .hero-section {
   background-color: var(--first-bgc);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/bgc-hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bgc-hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/bgc-hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/bgc-hero.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -651,16 +671,40 @@ body {
 @media screen and (max-width: 767px) {
   .hero-section {
     padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/mobile.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/mobile.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .hero-section {
     padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/tablet.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/tablet.jpg");
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/tablet@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-section {
     padding: 200px 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/descktop.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/descktop.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/hero/descktop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/descktop@2x.jpg");
   }
 }
 .hero-section__title {
@@ -1077,11 +1121,17 @@ body {
       flex-wrap: wrap;
   gap: 30px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .project {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (max-width: 479px) {
+  .project__item {
+    width: 100%;
+    height: 100%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1120,8 +1170,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
   background-color: var(--overlay-project);
-  padding: 77px 24px;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 18px;
   line-height: 1.56;
   color: var(--hero-color);
