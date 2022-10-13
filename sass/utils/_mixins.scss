@@ -1,4 +1,4 @@
-@mixin flex-center($df:flex, $jc:center, $ai:center) {
+@mixin flex-center($df: flex, $jc: center, $ai: center) {
   display: $df;
   justify-content: $jc;
   align-items: $ai;

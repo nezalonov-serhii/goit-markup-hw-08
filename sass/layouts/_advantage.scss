@@ -1,4 +1,7 @@
 .advantage {
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 47px;
+  }
   &__lists {
     display: flex;
     justify-content: center;
@@ -8,15 +11,15 @@
 
   &__item {
     @media screen and (max-width: 767px) {
-      max-width: 450px;
+      max-width: 100%;
     }
 
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      max-width: calc((100% - 30px) / 2);
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 270px;
+      max-width: calc((100% - 90px) / 4);
     }
   }
 

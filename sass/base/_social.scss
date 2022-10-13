@@ -10,12 +10,11 @@
 
     color: var(--social-color);
 
-    transition: background-color 250ms var(--cubic-bezer),
-    color 250ms var(--cubic-bezer);    
+    transition: background-color 250ms var(--cubic-bezer), color 250ms var(--cubic-bezer);
 
     &--color {
-        color: var(--footer-color);
-        background-color: var(--bgc-social-footer);
+      color: var(--footer-color);
+      background-color: var(--bgc-social-footer);
     }
 
     &:hover,

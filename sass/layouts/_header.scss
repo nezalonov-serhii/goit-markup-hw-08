@@ -40,14 +40,6 @@
     background-color: var(--prime-bgc);
 
     transition: transform 250ms var(--cubic-bezer);
-
-    &.is-open {
-      transform: translatex(0);
-    }
-
-    &-icon {
-      fill: currentColor;
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -55,11 +47,18 @@
     align-items: center;
     flex-grow: 1;
   }
+
+  &.is-open {
+    transform: translatex(0);
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
 }
 
 .js-open-menu,
 .js-close-menu {
-  border: none;
   background-color: transparent;
 
   @media screen and (min-width: 768px) {
@@ -74,10 +73,9 @@
 }
 
 .navigation {
-
-     @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
-   }
+  }
 
   &__link {
     font-weight: 500;
@@ -110,6 +108,25 @@
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.02em;
+    }
+  }
+
+  &__link--current {
+    position: relative;
+    color: var(--acent-color);
+
+    @media screen and (min-width: 768px) {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border: 1px solid var(--acent-color);
+        border-radius: 2px;
+        background-color: var(--acent-color);
+      }
     }
   }
 }

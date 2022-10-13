@@ -11,6 +11,7 @@ p {
 button {
   padding: 0;
   border: none;
+  cursor: pointer;
 }
 
 ul {
@@ -20,10 +21,8 @@ ul {
 
 img {
   display: block;
-}
-
-button {
-  cursor: pointer;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -52,4 +51,3 @@ button {
   opacity: 0;
   pointer-events: none;
 }
-
