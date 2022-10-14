@@ -142,6 +142,7 @@
   }
 
   &__checkbox-label {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -156,22 +157,28 @@
   }
 
   &__agree {
-    margin-right: 8px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);    
   }
 
   &__checked {
     opacity: 0;
 
+    
     transition: opacity 250ms var(--cubic-bezer);
   }
 
   &__unchecked {
     opacity: 1;
 
+
     transition: opacity 250ms var(--cubic-bezer);
   }
 
   &__license {
+    padding-left: 23px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
