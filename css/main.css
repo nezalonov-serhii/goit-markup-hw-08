@@ -584,6 +584,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 376px) {
+  .contact__tel {
+    font-size: 26px;
+  }
+}
 @media screen and (max-width: 767px) {
   .contact__tel {
     color: var(--acent-color);
