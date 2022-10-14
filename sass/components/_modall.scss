@@ -142,7 +142,6 @@
   }
 
   &__checkbox-label {
-    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
@@ -157,10 +156,7 @@
   }
 
   &__agree {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);    
+    margin-right: 8px;
   }
 
   &__checked {
@@ -178,7 +174,6 @@
   }
 
   &__license {
-    padding-left: 23px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;

@@ -400,7 +400,7 @@ body {
   .menu {
     position: absolute;
     top: 0px;
-    left: 0;
+    left: 0px;
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1393,7 +1393,6 @@ body {
   }
 }
 .modall__checkbox-label {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1409,11 +1408,7 @@ body {
   opacity: 0;
 }
 .modall__agree {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin-right: 8px;
 }
 .modall__checked {
   opacity: 0;
@@ -1426,7 +1421,6 @@ body {
   transition: opacity 250ms var(--cubic-bezer);
 }
 .modall__license {
-  padding-left: 23px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
