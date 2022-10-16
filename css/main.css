@@ -649,8 +649,8 @@ body {
   padding: 0 10px;
 }
 @media screen and (min-width: 460px) {
-  .contact-social__item:not(:last-child) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  .contact-social__item:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 @media screen and (max-width: 459px) {
@@ -667,8 +667,8 @@ body {
   .contact-social__item:nth-child(4n+1), .contact-social__item:nth-child(4n+2) {
     margin-bottom: 10px;
   }
-  .contact-social__item:nth-child(2n-1) {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  .contact-social__item:nth-child(even) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
   }
 }
 .contact-social__link {

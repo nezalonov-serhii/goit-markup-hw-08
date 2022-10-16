@@ -236,8 +236,8 @@
     padding: 0 10px;
 
     @media screen and (min-width: 460px) {
-      &:not(:last-child) {
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      &:not(:first-child) {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
       }
     }
 
@@ -251,8 +251,8 @@
         margin-bottom: 10px;
       }
 
-      &:nth-child(2n-1) {
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
+      &:nth-child(even) {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
       }
     }
   }
