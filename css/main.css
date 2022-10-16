@@ -1393,6 +1393,9 @@ body {
   }
 }
 .modall__checkbox-label {
+  position: relative;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1408,7 +1411,11 @@ body {
   opacity: 0;
 }
 .modall__agree {
-  margin-right: 8px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .modall__checked {
   opacity: 0;
@@ -1424,6 +1431,7 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
+  padding-left: 24px;
   color: var(--second-color);
 }
 @media screen and (min-width: 1200px) {
